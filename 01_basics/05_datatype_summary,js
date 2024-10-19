@@ -40,3 +40,27 @@ myFunction();
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+// ------------------------------------------------------------------------------
+
+// Stack (Used in Primitive data type) and Heap (Non premitive)
+let myName = 'rahul';
+let newName = myName;
+newName = 'laiba';
+
+console.log('myname');
+// here only value in newName will be changed but not in myName
+console.log(newName);
+
+let userDetails = {
+    uname : 'laiba',
+    'age': 3
+}
+
+let newUserDetails = userDetails;
+newUserDetails.age = 5;
+// here the age will be changed in both userDetails and newUserDetails since non primitive 
+// data type is call by reference
+console.log(userDetails, newUserDetails);
+
+
