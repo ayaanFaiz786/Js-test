@@ -1,0 +1,42 @@
+// Premitive data types (Call by value)
+// 7 types - String, Number, Boolean, Null, undefined, Symbol, BigInt.
+
+const value = Symbol('123');
+const newVAlue = Symbol('123');
+
+// here value and newValue will not be same
+console.log(value === newVAlue);
+
+
+// Not premitive (By reference)
+// array, object, functions
+
+// array
+const heroes = ['superman', 'spiderman', 'batman'];
+// object
+let fruits = {
+    'name' : 'apple',
+    'color' : 'red',
+}
+
+// function
+const myFunction = function() {
+    console.log('this is my function');
+}
+
+myFunction();
+
+// Return type 
+// 1) Primitive Datatypes
+//        Number => number
+//        String  => string
+//        Boolean  => boolean
+//        null  => object
+//        undefined  =>  undefined
+//        Symbol  =>  symbol
+//        BigInt  =>  bigint
+
+// 2) Non-primitive Datatypes
+//        Arrays  =>  object
+//        Function  =>  function
+//        Object  =>  object
