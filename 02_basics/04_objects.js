@@ -8,8 +8,8 @@ tinderUser.id = 'abc123';
 tinderUser.name = 'sam';
 tinderUser.isLoggedIn  = false;
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
 
 // console.log(tinderUser);
 
@@ -33,3 +33,18 @@ const obj2 = {3:'c', 4:'d'};
 // using spread operators
 const obj3 = {...obj1, ...obj2};
 // console.log(obj3);
+
+// destructuring object
+const course = {
+    course:'test course',
+    price: 999,
+    instructor: 'ayaan',
+}
+
+// conventional way
+// console.log(course.instructor);
+
+// const {instructor} = course;
+// destructuring with custom name
+const {instructor : instructorName} = course;
+console.log(instructorName);
